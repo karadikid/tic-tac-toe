@@ -6,18 +6,17 @@ let gameArray = {};
 let counter = 0;
 
 divContainer.forEach(item => item.addEventListener("click", function (){
-    checkScore();
-    console.log(checkScore());
     if (counter % 2 == 0) {
         item.style.backgroundColor = 'red';
         counter += 1;
         console.log(item, counter);
+        checkScore();
     } else {
         item.style.backgroundColor = 'blue';
         counter += 1;
-        console.log(item, counter)
+        console.log(item, counter);
+        checkScore();
     }
-    
 }));
 
 function checkScore(){
@@ -36,6 +35,6 @@ function checkScore(){
     ) {
         alert("Blue Wins!");
     } else {
-        return 0;
+        return console.log(document.querySelector("#zero").style.backgroundColor);
     }
 }   
