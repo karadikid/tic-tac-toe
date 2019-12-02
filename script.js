@@ -20,10 +20,6 @@ divContainer.forEach(item => item.addEventListener("click", function (){
     
 }));
 
-function changeColor(){
-    document.querySelector("div").backgroundColor = "red";
-}
-
 function checkScore(){
     if (document.querySelector("#zero").style.backgroundColor == "red" && document.querySelector("#one").style.backgroundColor == "red" && document.querySelector("#two") == "red" ||
     document.querySelector("#three").style.backgroundColor == "red" && document.querySelector("#four").style.backgroundColor == "red" && document.querySelector("#five") == "red" ||
